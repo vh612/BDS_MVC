@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <a href="/add" class="btn btn-info">ADD Contract</a>
+      <table class="table">
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>CCCD</th>
+          <th>Adress</th>
+          <th>phone</th>
+          <th>ID_property</th>
+          <th>DATE_Contract</th>
+          <th>Value_Contract</th>
+          <th>Price_deposit</th>
+          <th>Price_remaining</th>
+          <th>Status</th>
+          <th>Administer</th>
+        </thead>
+        <tbody>
+          <% for(var i=0; i<data.length; i++) { %>
+            <tr>
+              <td><%= data[i].id %></td>
+              <td><%= data[i].name %></td>
+              <td><%= data[i].age %></td>
+              <td><%= data[i].id_card %></td>
+              <td><%= data[i].adress %></td>
+              <td><%= data[i].phone %></td>
+              <td><%= data[i].id_property %></td>
+              <td><%= data[i].date_contract %></td>
+              <td><%= data[i].value_contract %></td>
+              <td><%= data[i].price_stake %></td>
+              <td><%= data[i].price_renk %></td>
+              <td><%= data[i].status %></td>
+              <td>
+                <a href="/edit/<%= data[i].id %>" class="btn btn-primary">Edit</a>
+                <a href="/delete/<%= data[i].id %>" class="btn btn-danger">Delete</a>
+              </td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

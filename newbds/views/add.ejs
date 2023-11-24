@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .center-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh; /* Set the height to 100% of the viewport height */
+    }
+  </style>
+  <body>
+    <div class="container mt-3">
+     <h3 class="text-center font-weight-bold ">ADD Contract</h3>
+     <form action="/add" method="post">
+        
+
+         <label for="name">Name</label>
+         <input type="text" name="name" class="form-control">
+
+         <label for="age">Tuổi</label>
+         <input type="age" name="age" class="form-control">
+
+         <label for="id_card">CCCD</label>
+         <input type="text" name="id_card" class="form-control">
+
+         <label for="adress">Adress</label>
+         <input type="text" name="adress" class="form-control">
+
+         <label for="phone">Phone</label>
+         <input type="text" name="phone" class="form-control">
+
+         <label for="date_contract">DATE Contract</label>
+         <input type="date" name="date_contract" class="form-control">
+
+         <label for="value_contract">Value Contract</label>
+         <input type="text" name="value_contract" class="form-control">
+
+         <label for="price_stake">Price_deposit</label>
+         <input type="text" name="price_stake" class="form-control">
+
+         <label for="age">Price_remaining</label>
+         <input type="text" name="price_renk" class="form-control">
+
+         <label for="status">Status</label>
+         <input type="text" name="status" class="form-control">
+         
+
+         <div class="center-button">
+          <input type="submit" value="ADD Contract" class="font-weight-bold btn btn-primary mt-2">
+         </div>
+         <a class="font-weight-bold" href="/">Quay lại?</a>
+     </form>
+    </div>
+  </body>
+</html>
